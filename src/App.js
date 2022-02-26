@@ -50,7 +50,7 @@ function App() {
               </ProtectedRouteParent>
             }
           />
-          {/* This match /*(something) */}
+          {/* This matches /(something) */}
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </div>

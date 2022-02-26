@@ -11,7 +11,7 @@ export const useAuth = () => {
   return useContext(AuthContext);
 };
 
-// Main component, pull the children off of props
+// Main file component, pull the children off of props
 const AuthProvider = ({ children }) => {
   // persist the token
   const [token, setToken] = useState(null);
@@ -41,7 +41,7 @@ const AuthProvider = ({ children }) => {
     onLogin: handleLogin,
     onLogout: handleLogout,
   };
-  // Children of this AuthProvider component can use the hook useContext(AuthContext) to get
+  // Children of this AuthContext.Provider component can use the hook useContext(AuthContext) to get
   // a reference to the context value.
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

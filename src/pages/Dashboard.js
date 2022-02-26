@@ -6,7 +6,7 @@ const Dashboard = () => {
   return (
     <>
       <main style={{ padding: '1rem 0' }}>
-        <h2>Dashboard (Private)</h2>
+        <h2>Dashboard (Protected)</h2>
         <h3>You are authenticate with this token: {token}</h3>
       </main>
     </>
