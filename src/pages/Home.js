@@ -1,12 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../components/AuthProvider';
 const Home = () => {
-  const { onLogin, token } = useAuth();
+  const navigate = useNavigate();
+  const { token } = useAuth();
   return (
     <main>
       <h2>Home (Public)</h2>
       {!token && (
-        <button type="button" onClick={onLogin}>
-          Sign In
+        <button type="button" onClick={() => navigate('/login')}>
+          Login Page
         </button>
       )}
       <div style={{ textAlign: 'left' }}>

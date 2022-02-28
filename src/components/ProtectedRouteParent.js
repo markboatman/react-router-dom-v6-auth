@@ -13,7 +13,7 @@ const ProtectedRouteParent = ({ children }) => {
   console.log('In ProtectedRouteParent, location is: ', location);
   if (!token) {
     // redirect to /home if not logged in, or if they logout
-    return <Navigate to="/home" replace state={{ from: location }} />;
+    return <Navigate to="/login" replace state={{ from: location }} />;
   }
   // ELSE make our children available as Route(s) / links
   return children;

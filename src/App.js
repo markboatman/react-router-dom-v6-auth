@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
+import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Admin from './pages/Admin';
 import ProtectedRouteParent from './components/ProtectedRouteParent';
@@ -14,7 +15,7 @@ import AuthProvider from './components/AuthProvider';
 
 function App() {
   return (
-    /*     ˜
+    /*     
     AuthProvider encapsulates the AuthContext now
     AuthContext is created in AuthProvider.js.
     The <AuthContext.Provider value={ ...someObject }> is set in AuthProvider component
@@ -32,6 +33,7 @@ function App() {
           <Route index element={<Home />} />
           {/* /home is functioning as the login page */}
           <Route path="home" element={<Home />} />
+          <Route path="login" element={<Login />} />
           <Route
             path="dashboard"
             // ProtectedRouteParent is a gate keeper,

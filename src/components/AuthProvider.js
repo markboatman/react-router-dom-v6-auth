@@ -34,6 +34,7 @@ const AuthProvider = ({ children }) => {
 
   const handleLogout = () => {
     setToken(null);
+    navigate('/home');
   };
 
   const value = {
