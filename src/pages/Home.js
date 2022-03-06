@@ -23,8 +23,7 @@ const Home = () => {
           token is persisted by AuthContext = createContext(null) in
           components/AuthProvider.js. All authentication, login/logout and token
           logic/maintenance is encapsulated in components/AuthProvider.js.
-          Currently the home page also functions as the login page.{' '}
-        </p>{' '}
+        </p>
         <p>
           Most of this code comes from the tutorial by Robin Wieruch:{' '}
           <a href="https://www.robinwieruch.de/react-router-authentication/">
