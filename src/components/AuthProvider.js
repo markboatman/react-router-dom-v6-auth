@@ -11,7 +11,7 @@ export const useAuth = () => {
   return useContext(AuthContext);
 };
 
-// Main file component, pull the children off of props
+// pull the children off of props
 const AuthProvider = ({ children }) => {
   // persist the token
   const [token, setToken] = useState(null);
@@ -25,7 +25,7 @@ const AuthProvider = ({ children }) => {
     // });   OR
     const token = await fakeAuth();
     setToken(token);
-    // Iteresting ?. syntax, we put 'from.pathname' value on
+    // Interesting ?. syntax, we put 'from.pathname' value on
     // in ProtectedRouteParent
     // This will get us back to the current page (origin) after we login
     const origin = location.state?.from?.pathname || '/dashboard';
@@ -43,7 +43,7 @@ const AuthProvider = ({ children }) => {
     onLogout: handleLogout,
   };
   // Children of this AuthContext.Provider component can use the hook useContext(AuthContext) to get
-  // a reference to the context value.
+  // a reference to the context value but that's not how we are doing it.
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 
