@@ -1,6 +1,6 @@
 # Demo app using react-router-dom V6
 
-All components in this app are function components. It uses BrowsesRouter, Routes, Route and the hooks useNavigation and useLocation to define routes and accomplish redirection. Protected routes are children of components/ProtectRouteParent.js. Authentication of tokens are provided by a fake authtoken generator call util/fakeAuth.js and the token is persisted by AuthContext = createContext(null) in components/AuthProvider.js. All authentication, login/logout and token logic/maintenance is encapsulated in components/AuthProvider.js.
+All components in this app are function components. It uses BrowsesRouter, Routes, Route and the hooks useNavigation and useLocation to define routes and accomplish redirection. Protected routes are children of components/ProtectRouteParent.js. Authentication of tokens are provided by a fake authtoken generator called util/fakeAuth.js and the token is persisted by AuthContext = createContext(null) in components/AuthProvider.js. All authentication, login/logout and token logic/maintenance is encapsulated in components/AuthProvider.js.
 
 Most of this code comes from this [tutorial](https://www.robinwieruch.de/react-router-authentication/) by Robin Wieruch
 
