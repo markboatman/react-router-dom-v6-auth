@@ -26,7 +26,7 @@ function App() {
     */
     <AuthProvider>
       <div className="App">
-        <h1>react-router-dom-v6 Auth</h1>
+        <h1>Menu App using react-router-dom V6</h1>
         <Navigation />
         <Routes>
           {/* If path is '/' or nothing, go here */}
